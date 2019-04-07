@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment version="101100" identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +675,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="EggTime" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,11 +685,12 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="EggTime :)" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="EggTimeMainWindow" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="346" height="471"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="346" height="471"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -698,20 +701,106 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="74" y="358"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EggTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="478"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r8p-Zp-bPs" userLabel="Button Stack View">
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="60"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hBc-d8-eXZ">
+                                        <rect key="frame" x="0.0" y="-1" width="115" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Start" bezelStyle="smallSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7oB-kp-olf">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qJ7-iR-x2n">
+                                        <rect key="frame" x="115" y="-1" width="116" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="WM3-WY-Z3D">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B8J-I2-GUR">
+                                        <rect key="frame" x="231" y="-1" width="115" height="62"/>
+                                        <buttonCell key="cell" type="smallSquare" title="Fuck off" bezelStyle="smallSquare" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="2W6-eV-60A">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system" size="24"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qJ7-iR-x2n" firstAttribute="height" secondItem="r8p-Zp-bPs" secondAttribute="height" id="MGb-dF-Nba"/>
+                                    <constraint firstItem="B8J-I2-GUR" firstAttribute="height" secondItem="r8p-Zp-bPs" secondAttribute="height" id="Qyf-Dh-ZgG"/>
+                                    <constraint firstItem="hBc-d8-eXZ" firstAttribute="height" secondItem="r8p-Zp-bPs" secondAttribute="height" id="SBI-YI-Tu4"/>
+                                    <constraint firstAttribute="height" constant="60" id="o9l-rD-HNN"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="centerX" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="250" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TM5-P2-SoC" userLabel="Timer Stack View">
+                                <rect key="frame" x="20" y="145" width="306" height="253"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ot8-Kd-Zjl">
+                                        <rect key="frame" x="52" y="136" width="203" height="117"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="6:00" id="9tf-yX-5vI">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZ1-Be-5lh">
+                                        <rect key="frame" x="20" y="0.0" width="266" height="128"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="LfT-6s-Kg2"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cZ1-Be-5lh" firstAttribute="leading" secondItem="TM5-P2-SoC" secondAttribute="leading" constant="20" symbolic="YES" id="1Ca-pB-QOl"/>
+                                    <constraint firstItem="cZ1-Be-5lh" firstAttribute="top" secondItem="Ot8-Kd-Zjl" secondAttribute="bottom" constant="8" symbolic="YES" id="3dT-Ad-GMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="cZ1-Be-5lh" secondAttribute="trailing" constant="20" symbolic="YES" id="g89-bk-V4N"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="r8p-Zp-bPs" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="418" id="5Ug-kl-9mZ"/>
+                            <constraint firstAttribute="trailing" secondItem="TM5-P2-SoC" secondAttribute="trailing" constant="20" id="Mqu-Ac-eSf"/>
+                            <constraint firstItem="r8p-Zp-bPs" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Xs9-zI-VDs"/>
+                            <constraint firstItem="r8p-Zp-bPs" firstAttribute="top" secondItem="TM5-P2-SoC" secondAttribute="bottom" constant="85" id="bGR-pJ-7Dd"/>
+                            <constraint firstItem="TM5-P2-SoC" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="eG5-sy-pDv"/>
+                            <constraint firstAttribute="bottom" secondItem="r8p-Zp-bPs" secondAttribute="bottom" id="kYU-Is-1ur"/>
+                            <constraint firstAttribute="trailing" secondItem="r8p-Zp-bPs" secondAttribute="trailing" id="nby-g8-spF"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="74" y="1042"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>
