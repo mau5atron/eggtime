@@ -14,6 +14,7 @@
 		F2DB4A7222599FCA006CB619 /* EggTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB4A7122599FCA006CB619 /* EggTimeTests.swift */; };
 		F2DB4A7D22599FCA006CB619 /* EggTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB4A7C22599FCA006CB619 /* EggTimeUITests.swift */; };
 		F2F71987225BAA2F004C7C57 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */; };
+		F2F7198D225BD21D004C7C57 /* EggTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F7198C225BD21D004C7C57 /* EggTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +40,6 @@
 		F2DB4A6022599FC8006CB619 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2DB4A6222599FCA006CB619 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2DB4A6522599FCA006CB619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F2DB4A6722599FCA006CB619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2DB4A6822599FCA006CB619 /* EggTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EggTime.entitlements; sourceTree = "<group>"; };
 		F2DB4A6D22599FCA006CB619 /* EggTimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DB4A7122599FCA006CB619 /* EggTimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimeTests.swift; sourceTree = "<group>"; };
 		F2DB4A7322599FCA006CB619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +47,9 @@
 		F2DB4A7C22599FCA006CB619 /* EggTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimeUITests.swift; sourceTree = "<group>"; };
 		F2DB4A7E22599FCA006CB619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
+		F2F7198C225BD21D004C7C57 /* EggTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTime.swift; sourceTree = "<group>"; };
+		F2F7198E225BEC92004C7C57 /* EggTime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EggTime.entitlements; sourceTree = "<group>"; };
+		F2F7198F225BEC95004C7C57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,13 +100,13 @@
 		F2DB4A5D22599FC8006CB619 /* EggTime */ = {
 			isa = PBXGroup;
 			children = (
+				F2F7198A225BCEC6004C7C57 /* Model */,
 				F2DB4A5E22599FC8006CB619 /* AppDelegate.swift */,
-				F2DB4A6022599FC8006CB619 /* ViewController.swift */,
-				F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */,
+				F2F71989225BCE3F004C7C57 /* View Controllers */,
 				F2DB4A6222599FCA006CB619 /* Assets.xcassets */,
 				F2DB4A6422599FCA006CB619 /* Main.storyboard */,
-				F2DB4A6722599FCA006CB619 /* Info.plist */,
-				F2DB4A6822599FCA006CB619 /* EggTime.entitlements */,
+				F2F7198E225BEC92004C7C57 /* EggTime.entitlements */,
+				F2F7198F225BEC95004C7C57 /* Info.plist */,
 			);
 			path = EggTime;
 			sourceTree = "<group>";
@@ -125,6 +127,23 @@
 				F2DB4A7E22599FCA006CB619 /* Info.plist */,
 			);
 			path = EggTimeUITests;
+			sourceTree = "<group>";
+		};
+		F2F71989225BCE3F004C7C57 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2DB4A6022599FC8006CB619 /* ViewController.swift */,
+				F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F2F7198A225BCEC6004C7C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2F7198C225BD21D004C7C57 /* EggTime.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +278,7 @@
 			files = (
 				F2DB4A6122599FC8006CB619 /* ViewController.swift in Sources */,
 				F2F71987225BAA2F004C7C57 /* PrefsViewController.swift in Sources */,
+				F2F7198D225BD21D004C7C57 /* EggTime.swift in Sources */,
 				F2DB4A5F22599FC8006CB619 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
