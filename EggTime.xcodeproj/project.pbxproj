@@ -13,6 +13,7 @@
 		F2DB4A6622599FCA006CB619 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DB4A6422599FCA006CB619 /* Main.storyboard */; };
 		F2DB4A7222599FCA006CB619 /* EggTimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB4A7122599FCA006CB619 /* EggTimeTests.swift */; };
 		F2DB4A7D22599FCA006CB619 /* EggTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DB4A7C22599FCA006CB619 /* EggTimeUITests.swift */; };
+		F2F71987225BAA2F004C7C57 /* PrefsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		F2DB4A7822599FCA006CB619 /* EggTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DB4A7C22599FCA006CB619 /* EggTimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggTimeUITests.swift; sourceTree = "<group>"; };
 		F2DB4A7E22599FCA006CB619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				F2DB4A5E22599FC8006CB619 /* AppDelegate.swift */,
 				F2DB4A6022599FC8006CB619 /* ViewController.swift */,
+				F2F71986225BAA2F004C7C57 /* PrefsViewController.swift */,
 				F2DB4A6222599FCA006CB619 /* Assets.xcassets */,
 				F2DB4A6422599FCA006CB619 /* Main.storyboard */,
 				F2DB4A6722599FCA006CB619 /* Info.plist */,
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2DB4A6122599FC8006CB619 /* ViewController.swift in Sources */,
+				F2F71987225BAA2F004C7C57 /* PrefsViewController.swift in Sources */,
 				F2DB4A5F22599FC8006CB619 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
